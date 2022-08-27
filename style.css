@@ -1,0 +1,143 @@
+:root {
+    --ff: 'Overpass', sans-serif;
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --fs: 0.9375rem;
+    --fw-400: 400;
+    --fw-700: 700;   
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Website of google font not working. So I used this @font-face method and I found out that the space that every letters occupied was bigger than what I had before and It would have been a necessity to reorganize the layout cause of this issue. INCREASED LETTER-SPACING */
+
+/* Set core body defaults */
+body {  
+    text-align: left;
+    margin: 0 auto;
+    min-height: 100vh;
+
+    font-size: var(--fs);
+    font-weight: var(--fw-400);
+    line-height: 1.625em;
+
+    background-color: var(--Very-Dark-Blue);
+    color: var(--Light-Grey);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: var(--Light-Grey);
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    color: var(--White);
+}
+
+ul {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;  
+}
+
+ul li {
+    background-color: hsla(213, 19%, 25%);
+       
+    height: 2.625rem;
+    width: 2.625rem;
+    text-align: center;
+    display: flex;
+    border-radius: 100%;
+}
+
+ul a {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+article {
+    margin: 0 auto;
+    width: clamp(20.4375rem, calc(20.4375rem + ((1vw - 0.21875rem) * 7.7982)), 25.75rem);
+    height: clamp(360px, calc(22.5rem + ((1vw - 3.5px) * 5.1376)), 416px);
+    background-image: url("images/icon-star.svg");
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+    padding-top: 5rem;
+}
+
+article p {
+    margin-top: 0.625rem;
+}
+
+article a {
+    font-weight: var(--fw-700);
+}
+
+article > a:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.4rem;
+    height: 2.8125rem;
+    color: var(--White);
+    background-color: var(--Orange);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+.attribution { 
+        font-size: 0.6875rem; 
+        text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media(min-width: 48em){
+    article {
+        padding: 2rem;
+        padding-top: 6.875rem;
+    }
+    
+    ul li {
+        width: 3.1875rem;
+        height: 3.1875rem;
+    }
+}
