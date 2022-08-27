@@ -89,7 +89,7 @@ article {
     margin: 0 auto;
     width: clamp(20.4375rem, calc(20.4375rem + ((1vw - 0.21875rem) * 7.7982)), 25.75rem);
     height: clamp(360px, calc(22.5rem + ((1vw - 3.5px) * 5.1376)), 416px);
-    background-image: url("images/icon-star.svg");
+    background-color: var(--Dark-Blue);
     border-radius: 1.2rem;
     padding: 1.5rem;
     padding-bottom: 2rem;
@@ -116,7 +116,29 @@ article > a:last-child {
     letter-spacing: 2px;
 }
 
+main {
+    position: relative;
+}
 
+header {
+    position: absolute;
+    top: 5%;
+    left: 26%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: hsla(213, 19%, 25%);
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
 
 
 
@@ -139,5 +161,10 @@ article > a:last-child {
     ul li {
         width: 3.1875rem;
         height: 3.1875rem;
+    }
+    
+    header {
+        width: 3rem;
+        height: 3rem;
     }
 }
