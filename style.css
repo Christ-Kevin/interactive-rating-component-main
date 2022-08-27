@@ -83,6 +83,18 @@ ul a {
     justify-content: center;
 }
 
+ul a:hover {
+    border-radius: 100%;
+    color: var(--White);
+    background-color: var(--Orange);
+}
+
+.visited {
+    color: var(--White);
+    background-color: var(--Light-Grey);    /* add the class to a visited link */
+}
+
+
 article {
     margin: 0 auto;
     width: clamp(20.4375rem, calc(20.4375rem + ((1vw - 0.21875rem) * 7.7982)), 25.75rem);
@@ -113,6 +125,11 @@ article > a:last-child {
     background-color: var(--Orange);
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+article > a:last-child:hover {
+    color: var(--Orange);
+    background-color: var(--White);
 }
 
 
