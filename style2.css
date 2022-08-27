@@ -24,8 +24,6 @@
     padding: 0;
 }
 
-/* Website of google font not working. So I used this @font-face method and I found out that the space that every letters occupied was bigger than what I had before and It would have been a necessity to reorganize the layout cause of this issue. INCREASED LETTER-SPACING */
-
 /* Set core body defaults */
 body {  
     text-align: left;
@@ -46,41 +44,8 @@ body {
     position: relative;
 }
 
-a {
-    text-decoration: none;
-    color: var(--Light-Grey);
-}
-
-li {
-    list-style: none;
-}
-
 h1 {
     color: var(--White);
-}
-
-ul {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    display: flex;
-    justify-content: space-between;  
-}
-
-ul li {
-    background-color: hsla(213, 19%, 25%);
-       
-    height: 2.625rem;
-    width: 2.625rem;
-    text-align: center;
-    display: flex;
-    border-radius: 100%;
-}
-
-ul a {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 article {
@@ -99,56 +64,26 @@ article p {
     margin-top: 0.625rem;
 }
 
-article a {
-    font-weight: var(--fw-700);
+picture {
+    width: 100%;
 }
 
-article > a:last-child {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1.4rem;
-    height: 2.8125rem;
-    color: var(--White);
-    background-color: var(--Orange);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-
-header {
-    position: absolute;
-    top: 6%;
-    left: 6%;
-    width: 2.5rem;
-    height: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    background-color: hsla(213, 19%, 25%);
-}
-
-header img {
+img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
 }
 
-.attribution { 
-        font-size: 0.6875rem; 
-        text-align: center; 
-}
-
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
 
 @media(min-width: 48em){
     article {
         padding: 2rem;
         padding-top: 6.875rem;
+    }
+    
+    ul li {
+        width: 3.1875rem;
+        height: 3.1875rem;
     }
     
     header {
