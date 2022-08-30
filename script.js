@@ -5,17 +5,19 @@ class app {
     }
     
     load() {
-        this.showLoading();
         this.getData();
+        this.showLoading();
+    }
+    
+    handleclick(event){
+        window.open("index2.html", "_self");
     }
     
     showLoading() {        // open new index file, when button is clicked
         const button = document.querySelector("button");
-        if(button) {
-            button.addEventListener("click", () => {
-                window.open("index2.html", "_self");
-            })
-        }
+        
+            button.addEventListener("click", this.handleclick);
+        
     }
     
     result(){                // save clicked items in browser database with localStorage.setItem()
