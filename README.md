@@ -90,5 +90,5 @@ Users should be able to:
 
 ## Author
 
-- LinkedIn - [Christ-Kevin](linkedin.com/in/christ-kévin-touga-watat-32026712a)
+- LinkedIn - [Christ-Kevin](https://www.linkedin.com/in/christ-k%C3%A9vin-touga-watat-32026712a)
 - Frontend Mentor - [@Christ-Kevin](https://www.frontendmentor.io/profile/Christ-Kevin)
