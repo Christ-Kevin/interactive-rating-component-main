@@ -19,16 +19,19 @@ class app {
     }
     
     result(){                // save clicked items in browser database with localStorage.setItem()
-        const selected =  ([...document.querySelectorAll('.visited')].length);
+        const selected = document.querySelector('.visited').textContent;
         localStorage.setItem("selected", selected);
+        const button = document.querySelector("button");
+        button.removeAttribute("disabled");
     }
     
     getNumbers(){           // reset selected attribute, when user_start opened and toggle("visited") if clicked
         localStorage.setItem("selected", 0);               
         const numbers = [...document.querySelectorAll('.number')];
         numbers.forEach(number => {
-            number.addEventListener("click", () => {
-                number.classList.toggle("visited");
+            number.addEventListener("click", event => {
+                document.querySelector(".visited")?.classList?.remove("visited")
+                event.currentTarget.classList.add("visited");
                 this.result();
             })
         })      

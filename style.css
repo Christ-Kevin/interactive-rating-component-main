@@ -130,11 +130,15 @@ button {
 }
 
 button:hover {
+    
+}
+
+button:enabled {
     cursor: pointer;
+    background-color: blue;
     color: var(--Orange);
     background-color: var(--White);
 }
-
 
 header {
     position: absolute;
