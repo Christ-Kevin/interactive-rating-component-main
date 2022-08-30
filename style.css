@@ -33,6 +33,7 @@ body {
     min-height: 100vh;
 
     font-size: var(--fs);
+    font-family: var(--ff);
     font-weight: var(--fw-400);
     line-height: 1.625em;
 
