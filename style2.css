@@ -48,7 +48,7 @@ h1 {
     color: var(--White);
 }
 
-article {
+main {
     margin: 0 auto;
     width: clamp(20.4375rem, calc(20.4375rem + ((1vw - 0.21875rem) * 7.7982)), 25.75rem);
     height: clamp(360px, calc(22.5rem + ((1vw - 3.5px) * 5.1376)), 416px);
@@ -91,7 +91,7 @@ img {
 
 
 @media(min-width: 48em){
-    article {
+    main {
         padding: 2rem;
         padding-top: 2.8125rem;
         padding-bottom: 2.8125rem;
