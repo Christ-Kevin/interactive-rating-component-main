@@ -29,8 +29,7 @@ class app {
         this.enableButton(button);
         this.showLoading(button);
     }
-
-    
+ 
     getNumbers(){           // reset selected attribute, when user_start opened and toggle("visited") if clicked          
         const numbers = [...document.querySelectorAll('.number')];
         numbers.forEach(number => {
@@ -39,13 +38,11 @@ class app {
                 event.currentTarget.classList.add("visited");
                 this.result();
             },
-     {
-                once: true
-                  }
-            )
+              {
+                once: true          // event run only once. Better method than adding and removing listener 
+            });
         })      
-    }
-        
+    }     
     
     printNumbers(){          // insert data from localeStorage inside tag with class "rating"
         const rating = document.querySelector(".rating");
