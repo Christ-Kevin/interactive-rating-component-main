@@ -5,30 +5,31 @@ class app {
     }
     
     load() {
-        this.getData();
-        
+        this.getData();   
     }
     
-    handleclick(event){    // handle click
+    handleClickButton(event){    // handle click
         window.open("index2.html", "_self");
     }
     
     showLoading(button) {        // open new index file, when button is clicked
-        //const button = document.querySelector("button");
-        button.addEventListener("click", this.handleclick);       
+        button.addEventListener("click", this.handleClickButton);       
     }
     
-    enableButton(){
-        const button = document.querySelector("button");
+    enableButton(button){
         button.removeAttribute("disabled");
-        this.showLoading(button);
     }
     
     result(){                // save clicked items in browser database with localStorage.setItem()
-        const selected = document.querySelector('.visited').textContent;
+        //const selected = document.querySelector('.visited').textContent;
+        console.log("a");
+        const selected = event.currentTarget.textContent;
         localStorage.setItem("selected", selected);
-        this.enableButton();
+        const button = document.querySelector("button");
+        this.enableButton(button);
+        this.showLoading(button);
     }
+
     
     getNumbers(){           // reset selected attribute, when user_start opened and toggle("visited") if clicked          
         const numbers = [...document.querySelectorAll('.number')];
@@ -37,9 +38,14 @@ class app {
                 document.querySelector(".visited")?.classList?.remove("visited")
                 event.currentTarget.classList.add("visited");
                 this.result();
-            })
+            },
+     {
+                once: true
+                  }
+            )
         })      
     }
+        
     
     printNumbers(){          // insert data from localeStorage inside tag with class "rating"
         const rating = document.querySelector(".rating");
