@@ -6,25 +6,28 @@ class app {
     
     load() {
         this.getData();
-        this.showLoading();
+        
     }
     
-    handleclick(event){
+    handleclick(event){    // handle click
         window.open("index2.html", "_self");
     }
     
-    showLoading() {        // open new index file, when button is clicked
+    showLoading(button) {        // open new index file, when button is clicked
+        //const button = document.querySelector("button");
+        button.addEventListener("click", this.handleclick);       
+    }
+    
+    enableButton(){
         const button = document.querySelector("button");
-        
-            button.addEventListener("click", this.handleclick);
-        
+        button.removeAttribute("disabled");
+        this.showLoading(button);
     }
     
     result(){                // save clicked items in browser database with localStorage.setItem()
         const selected = document.querySelector('.visited').textContent;
         localStorage.setItem("selected", selected);
-        const button = document.querySelector("button");
-        button.removeAttribute("disabled");
+        this.enableButton();
     }
     
     getNumbers(){           // reset selected attribute, when user_start opened and toggle("visited") if clicked          
