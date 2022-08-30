@@ -24,8 +24,6 @@
     padding: 0;
 }
 
-/* Website of google font not working. So I used this @font-face method and I found out that the space that every letters occupied was bigger than what I had before and It would have been a necessity to reorganize the layout cause of this issue. INCREASED LETTER-SPACING */
-
 /* Set core body defaults */
 body {  
     text-align: left;
