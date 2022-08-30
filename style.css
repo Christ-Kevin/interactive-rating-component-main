@@ -92,6 +92,7 @@ ul a:hover {
 .visited {
     color: var(--White);
     background-color: var(--Light-Grey);    /* add the class to a visited link */
+    border-radius: 100%;
 }
 
 
@@ -111,23 +112,26 @@ article p {
     margin-top: 0.625rem;
 }
 
-article a {
+article a, button {
     font-weight: var(--fw-700);
 }
 
-article > a:last-child {
+button {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 1.4rem;
+    border-style: none;
     height: 2.8125rem;
     color: var(--White);
     background-color: var(--Orange);
     text-transform: uppercase;
     letter-spacing: 2px;
+    width: 100%;
 }
 
-article > a:last-child:hover {
+button:hover {
+    cursor: pointer;
     color: var(--Orange);
     background-color: var(--White);
 }
