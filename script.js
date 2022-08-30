@@ -25,8 +25,7 @@ class app {
         button.removeAttribute("disabled");
     }
     
-    getNumbers(){           // reset selected attribute, when user_start opened and toggle("visited") if clicked
-        localStorage.setItem("selected", 0);               
+    getNumbers(){           // reset selected attribute, when user_start opened and toggle("visited") if clicked          
         const numbers = [...document.querySelectorAll('.number')];
         numbers.forEach(number => {
             number.addEventListener("click", event => {
@@ -40,7 +39,7 @@ class app {
     printNumbers(){          // insert data from localeStorage inside tag with class "rating"
         const rating = document.querySelector(".rating");
         const selected_sum = localStorage.getItem("selected");
-        rating.textContent = selected_sum; 
+        rating.textContent = selected_sum;
     }
     
     getData() {              // use different html files in one script file
