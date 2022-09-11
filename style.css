@@ -8,7 +8,7 @@
     --Very-Dark-Blue: hsl(216, 12%, 8%);
     --fs: 0.9375rem;
     --fw-400: 400;
-    --fw-700: 700;   
+    --fw-700: 700;
 }
 
 /* Box sizing rules */
@@ -25,7 +25,7 @@
 }
 
 /* Set core body defaults */
-body {  
+body {
     text-align: left;
     margin: 0 auto;
     min-height: 100vh;
@@ -37,7 +37,7 @@ body {
 
     background-color: var(--Very-Dark-Blue);
     color: var(--Light-Grey);
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,12 +53,12 @@ ul {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
 }
 
 ul li {
     background-color: hsla(213, 19%, 25%);
-       
+
     width: 2.625rem;
     text-align: center;
     display: flex;
@@ -68,7 +68,8 @@ ul li {
 
 ul a {
     flex: 1;
-    line-height: 2.625rem;         /* center text in container height = line-height */
+    line-height: 2.625rem;
+    /* center text in container height = line-height */
     text-decoration: none;
     color: var(--Light-Grey);
 }
@@ -81,7 +82,8 @@ ul a:hover {
 
 .visited {
     color: var(--White);
-    background-color: var(--Light-Grey);    /* add the class to a visited link */
+    background-color: var(--Light-Grey);
+    /* add the class to a visited link */
     border-radius: 100%;
 }
 
@@ -102,7 +104,8 @@ article p {
     margin-top: 0.625rem;
 }
 
-article a, button {
+article a,
+button {
     font-weight: var(--fw-700);
 }
 
@@ -120,9 +123,7 @@ button {
     width: 100%;
 }
 
-button:hover {
-    
-}
+button:hover {}
 
 button:enabled {
     cursor: pointer;
@@ -151,21 +152,21 @@ header img {
     max-width: 100%;
 }
 
-.attribution { 
-        font-size: 0.6875rem; 
-        text-align: center; 
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
 }
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
 
-@media(min-width: 48em){
+@media(min-width: 48em) {
     main {
         padding: 2rem;
         padding-top: 6.875rem;
     }
-    
+
     header {
         width: 3rem;
         height: 3rem;

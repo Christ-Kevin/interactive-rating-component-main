@@ -8,7 +8,7 @@
     --Very-Dark-Blue: hsl(216, 12%, 8%);
     --fs: 0.9375rem;
     --fw-400: 400;
-    --fw-700: 700;   
+    --fw-700: 700;
 }
 
 /* Box sizing rules */
@@ -25,7 +25,7 @@
 }
 
 /* Set core body defaults */
-body {  
+body {
     text-align: center;
     margin: 0 auto;
     min-height: 100vh;
@@ -36,7 +36,7 @@ body {
 
     background-color: var(--Very-Dark-Blue);
     color: var(--Light-Grey);
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,22 +90,22 @@ img {
 }
 
 
-@media(min-width: 48em){
+@media(min-width: 48em) {
     main {
         padding: 2rem;
         padding-top: 2.8125rem;
         padding-bottom: 2.8125rem;
     }
-    
+
     ul li {
         width: 3.1875rem;
         height: 3.1875rem;
     }
-    
+
     figure {
         width: 12rem;
     }
-    
+
     figcaption {
         margin-top: 2rem;
         margin-bottom: 2rem;
