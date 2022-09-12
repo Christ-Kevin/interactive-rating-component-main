@@ -88,6 +88,7 @@ Users should be able to:
 - [OpenJavascript] (https://www.youtube.com/watch?v=x0VcigW9kN0) - Pass a Variable Value from One HTML Page to Another.
 - [Nosa Obaseki] (https://blog.logrocket.com/localstorage-javascript-complete-guide/#:~:text=Use%20the%20clear()%20method,does%20not%20receive%20any%20parameters.) - brieve introduction  to localStorage, sessionStorage and other properties of window
 - [Anna Fritzgerald] (https://blog.hubspot.com/website/center-div-css) - 11 ways to align text in container
+- [Elaine Leung] (https://codepen.io/elaineleung/pen/RwMqMxZ) - A better solution thant the one I had before
 
 ## Author
 

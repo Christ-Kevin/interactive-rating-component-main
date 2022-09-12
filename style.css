@@ -49,6 +49,10 @@ h1 {
     color: var(--White);
 }
 
+form {
+    margin-top: .5rem;
+}
+
 ul {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -66,21 +70,24 @@ ul li {
     list-style: none;
 }
 
-ul a {
+ul .number {
+    border-style: none;
     flex: 1;
     line-height: 2.625rem;
     /* center text in container height = line-height */
     text-decoration: none;
     color: var(--Light-Grey);
+    border-radius: 100%;
 }
 
-ul a:hover {
+ul .number:hover {
     border-radius: 100%;
     color: var(--White);
     background-color: var(--Orange);
+    cursor: pointer;
 }
 
-.visited {
+ul .visited {
     color: var(--White);
     background-color: var(--Light-Grey);
     /* add the class to a visited link */
@@ -88,7 +95,7 @@ ul a:hover {
 }
 
 
-main {
+.card {
     margin: 0 auto;
     width: clamp(20.4375rem, calc(20.4375rem + ((1vw - 0.21875rem) * 7.7982)), 25.75rem);
     height: clamp(360px, calc(22.5rem + ((1vw - 3.5px) * 5.1376)), 416px);
@@ -100,16 +107,11 @@ main {
     position: relative;
 }
 
-article p {
-    margin-top: 0.625rem;
-}
-
-article a,
 button {
     font-weight: var(--fw-700);
 }
 
-button {
+.submit {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,16 +125,13 @@ button {
     width: 100%;
 }
 
-button:hover {}
-
-button:enabled {
+.submit:hover {
     cursor: pointer;
-    background-color: blue;
     color: var(--Orange);
     background-color: var(--White);
 }
 
-header {
+.icon {
     position: absolute;
     top: 6%;
     left: 6%;
@@ -146,7 +145,7 @@ header {
     background-color: hsla(213, 19%, 25%);
 }
 
-header img {
+header img {   /* reset img */
     display: block;
     margin: 0 auto;
     max-width: 100%;
@@ -161,14 +160,64 @@ header img {
     color: hsl(228, 45%, 44%);
 }
 
+.result-card {
+    padding-top: 2.125rem;
+    padding-bottom: 2.29rem;
+}
+
+.acknowledgments {
+    margin-top: 0.625rem;
+}
+
+.header-rating {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+figure {
+    width: 10.5rem;
+}
+
+figcaption {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--Orange);
+    background-color: hsla(213, 19%, 25%);
+    border-radius: 1rem;
+}
+
+.bye {
+    font-size: xx-large;
+    line-height: 3rem;
+}
+
 @media(min-width: 48em) {
-    main {
+    .card {
         padding: 2rem;
         padding-top: 6.875rem;
     }
 
-    header {
+    .result-card {
+        padding: 2rem;
+        padding-top: 2.8125rem;
+        padding-bottom: 2.8125rem;
+        text-align: center;
+    }
+
+    .icon {
         width: 3rem;
         height: 3rem;
+        top: 7%;
+        left: 7%;   
+    }
+
+    figure {
+        width: 12rem;
+    }
+
+    figcaption {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }
