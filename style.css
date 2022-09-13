@@ -163,6 +163,7 @@ header img {   /* reset img */
 .result-card {
     padding-top: 2.125rem;
     padding-bottom: 2.29rem;
+    text-align: center;
 }
 
 .acknowledgments {
@@ -202,7 +203,6 @@ figcaption {
         padding: 2rem;
         padding-top: 2.8125rem;
         padding-bottom: 2.8125rem;
-        text-align: center;
     }
 
     .icon {
